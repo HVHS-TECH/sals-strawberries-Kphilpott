@@ -26,8 +26,8 @@
   <div class="container">
     <h1>Sal’s Strawberry Saloon</h1>
     <h2>(and other fruit products)</h2>
-
-    <button onclick="fb_login()">Login with Google</button>
+    <p id="ThankYou"></p>
+    <button id="Login" onclick="fb_login()">Login with Google</button><button id="Logout" style="display: none;" onclick="fb_logout()">Logout</button>
 
     <form id="fruitForm">
       <label for="name">Your Name:</label>
@@ -42,7 +42,7 @@
       <!-- add more fields here -->
     </form>
 
-    <button onclick="fb_write()">Submit</button>
+    <button id="submit" style="display: none;" onclick="fb_write()">Submit</button>
 
     <p id="statusMessage"></p>
   </div>
