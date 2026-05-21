@@ -9,9 +9,9 @@ function writeForm(){
     console.log(GLOBAL_user);
     const UserName = document.getElementById("name").value;
     console.log(UserName);
-    const favoriteFruit = document.getElementById("favoriteFruit").value;
+    const ShipOrder = document.getElementById("ShipOrder").value;
     console.log(favoriteFruit);
-    const quantityFruit = document.getElementById("fruitQuantity").value;
+    const quantityShips = document.getElementById("shipQuantity").value;
     console.log(quantityFruit);
    
 
@@ -20,8 +20,8 @@ function writeForm(){
     firebase.database().ref('/users/' + GLOBAL_user.uid).set(
       {
         Username: UserName,
-        FavoriteFruit: favoriteFruit,
-        QuantityFruit: quantityFruit,
+        shipOrder: ShipOrder,
+        QuantityFruit: quantityShips,
         Email: GLOBAL_user.email,
       }
     )
