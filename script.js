@@ -10,11 +10,11 @@ function writeForm(){
     const UserName = document.getElementById("name").value;
     console.log(UserName);
     const ShipOrder = document.getElementById("ShipOrder").value;
-    console.log(favoriteFruit);
+    console.log(ShipOrder);
     const quantityShips = document.getElementById("shipQuantity").value;
-    console.log(quantityFruit);
-   
-
+    console.log(quantityShips);
+    const OrderReason = document.getElementById("OrderReason").value;
+    console.log(OrderReason)
 
 
     firebase.database().ref('/users/' + GLOBAL_user.uid).set(
@@ -22,11 +22,13 @@ function writeForm(){
         Username: UserName,
         shipOrder: ShipOrder,
         QuantityFruit: quantityShips,
+        PurchaseReason: OrderReason,
         Email: GLOBAL_user.email,
       }
     )
 
     document.getElementById("ThankYou").innerHTML = "Thank You!";
+    document.getElementById("statusMessage").innerHTML = "Order Pending. Warning: making another order will override your previous order!"
 }
 
 

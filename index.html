@@ -29,6 +29,7 @@
     <p id="ThankYou"></p>
     <button id="Login" onclick="fb_login()">Login with Google</button><button id="Logout" style="display: none;" onclick="fb_logout()">Logout</button>
 
+<div><p> </p></div>
     <form id="shipForm">
       <label for="name">Your Name:</label>
       <input type="text" id="name" name="name" required />
@@ -39,12 +40,53 @@
       <label for="fruitQuantity">How many ships do you require?</label>
       <input type="number" id="shipQuantity" name="fruitQuantity" required />
 
+      <label for="Reason">Purpose of your purchase?</label>
+      <input type="text" id="OrderReason" name="OrderReason" required />
+
+
       <!-- add more fields here -->
     </form>
 
     <button id="submit" style="display: none;" onclick="fb_write()">Submit</button>
 
-    <p id="statusMessage"></p>
+    <p id="statusMessage">Waiting for Order...</p>
+    <div></div>
+
+        <p><small>Please Fill out the Form if you wish to order one of our Quality Guaranteed Starships. Incorrect Spelling will cause our administrators to assume which one you meant, which may cause a incorrect order and/or no shipment. It is reccomended to enter the designation of the ship. (e.g X-66 for our Starfighter)</small></p>
   </div>
+  <div><p> </p></div>
+<div class="container">
+<h2>Starship Catalogue</h2>
+<p>Small Sizes:</p>
+<p>X-66 Starfighter    [75000SC]</p>
+<p style="font-style: italic"><small>Custom-made starfighter with quad M-235 Gatling Laser, Six Mk9 Zeus Air-Air Missiles, and Four Mk3 CAS Air-Ground Missiles.</small></p>
+<p>G5-F "Quantum" Transport     [60000SC]</p>
+<p style="font-style: italic"><small>A decent transport, wheather it be Personal Transportation, Small-Scale Cargo, or Military Troop Transporting, the G5-f is perfect for the task.</small></p>
+<p>F-99 Stealth Starfighter (Mars Edition)    [99999.99SC]</p>
+<p style="font-style: italic"><small>The latest in North American Federation Starfighters, the F-99 is a formidable stealth fighter, with its non-relective micrometeor black coating, Four Mk55 Thermonuclear Air-Air or Air-Ground Missiles and single Mk2 Railcannon.</small></p>
+
+
+
+<p>Medium Sizes:</p>
+
+<p>J9-A "Otago" Space Destroyer    [250000SC]</p>
+<p style="font-style: italic"><small>Custom Design originally created for the NZSDF (New Zealand Space Defense Force) in 2075 after space warfare became common, the J9-A is still a formidable Space Destroyer even today! It has three 350mm Railguns, 72 Air-Air / Air-Ground "Storm" missiles, 12 Space Torpedos, and shield jamming abilities.</small></p>
+
+<p>Scotland-Class Light Cruiser    [450000SC]</p>
+<p style="font-style: italic"><small>One of the highest quality starships to come out of Brittania Shipyards in the last 200 years, now upgraded with actually good armour, shields, systems, and weapons! It is equipped with four anti-starfighter 250mm autocannons, ten 450mm railguns, and a Mark VI Starship Shield.</small></p>
+
+<p></p>
+<p style="font-style: italic"><small></small></p>
+
+
+
+
+
+
+
+</div>
+
+
+  
 </body>
 </html>
