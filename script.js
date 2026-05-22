@@ -21,7 +21,7 @@ function writeForm(){
       {
         Username: UserName,
         shipOrder: ShipOrder,
-        QuantityFruit: quantityShips,
+        QuantityShips: quantityShips,
         PurchaseReason: OrderReason,
         Email: GLOBAL_user.email,
       }
