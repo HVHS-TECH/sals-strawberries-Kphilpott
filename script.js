@@ -1,12 +1,11 @@
 
 console.log("Europa Starships Online, loading order form...")
-console.log("Europa Starships System Version 1.2 'Logo' Online.")
+console.log("Europa Starships System Version 1.2.1 'Logo' Online.")
 
 
 function writeForm(){
     // Get the form data
     console.log("Hello World");
-    console.log(GLOBAL_user);
     const UserName = document.getElementById("name").value;
     console.log(UserName);
     const ShipOrder = document.getElementById("ShipOrder").value;
