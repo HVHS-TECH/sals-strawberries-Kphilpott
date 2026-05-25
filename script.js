@@ -1,6 +1,6 @@
 
 console.log("Europa Starships Online, loading order form...")
-console.log("Europa Starships System Version 1.2.1 'Logo' Online.")
+console.log("Europa Starships System Version 1.2.2 'Logo' Online.")
 
 
 function writeForm(){
@@ -66,7 +66,6 @@ function fb_login() {
 function fb_HandleLogin(_user) {
   if (_user) {
     console.log("User is logged in.");
-    console.log(_user);
     GLOBAL_user = _user; //save the user details as global value
     document.getElementById("submit").style.display = "block";
 
