@@ -1,6 +1,6 @@
 
 console.log("Europa Starships Online, loading order form...")
-console.log("Europa Starships System Version 1.2.2 'Logo' Online.")
+console.log("Europa Starships System Version 1.2.4 'Logo' Online.")
 
 
 function writeForm(){
@@ -23,6 +23,8 @@ function writeForm(){
         QuantityShips: quantityShips,
         PurchaseReason: OrderReason,
         Email: GLOBAL_user.email,
+        Pfp: GLOBAL_user.photoURL,
+        DisplayName: GLOBAL_user.displayName,
       }
     )
 
